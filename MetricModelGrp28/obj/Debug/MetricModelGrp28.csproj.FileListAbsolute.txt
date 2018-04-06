@@ -1,0 +1,9 @@
+\\mac\home\documents\visual studio 2015\Projects\MetricModelGrp28\MetricModelGrp28\bin\Debug\MetricModelGrp28.exe.config
+\\mac\home\documents\visual studio 2015\Projects\MetricModelGrp28\MetricModelGrp28\bin\Debug\MetricModelGrp28.exe
+\\mac\home\documents\visual studio 2015\Projects\MetricModelGrp28\MetricModelGrp28\bin\Debug\MetricModelGrp28.pdb
+\\mac\home\documents\visual studio 2015\Projects\MetricModelGrp28\MetricModelGrp28\obj\Debug\MetricModelGrp28.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\MetricModelGrp28\MetricModelGrp28\obj\Debug\MetricModelGrp28.Form1.resources
+\\mac\home\documents\visual studio 2015\Projects\MetricModelGrp28\MetricModelGrp28\obj\Debug\MetricModelGrp28.Properties.Resources.resources
+\\mac\home\documents\visual studio 2015\Projects\MetricModelGrp28\MetricModelGrp28\obj\Debug\MetricModelGrp28.csproj.GenerateResource.Cache
+\\mac\home\documents\visual studio 2015\Projects\MetricModelGrp28\MetricModelGrp28\obj\Debug\MetricModelGrp28.exe
+\\mac\home\documents\visual studio 2015\Projects\MetricModelGrp28\MetricModelGrp28\obj\Debug\MetricModelGrp28.pdb
