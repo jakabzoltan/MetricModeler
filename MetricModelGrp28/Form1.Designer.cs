@@ -53,8 +53,12 @@
             this.lblOutputTimePerDeveloper = new System.Windows.Forms.Label();
             this.lblSteve = new System.Windows.Forms.Label();
             this.lblVictor = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numNumberOfDevelopers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNumberOfFunctionPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // numNumberOfDevelopers
@@ -150,7 +154,6 @@
             this.lblTotalProjectTime.Size = new System.Drawing.Size(222, 20);
             this.lblTotalProjectTime.TabIndex = 8;
             this.lblTotalProjectTime.Text = "Total Project Time (in months):";
-            this.lblTotalProjectTime.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblTotalLinesOfCode
             // 
@@ -165,12 +168,13 @@
             // btnCalculate
             // 
             this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.Location = new System.Drawing.Point(552, 302);
+            this.btnCalculate.Location = new System.Drawing.Point(1096, 675);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(150, 50);
             this.btnCalculate.TabIndex = 10;
             this.btnCalculate.Text = "Model The Metrics";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // lblOutputTotalProjectCost
             // 
@@ -316,11 +320,42 @@
             this.lblVictor.TabIndex = 24;
             this.lblVictor.Text = "Victor";
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.Location = new System.Drawing.Point(310, 514);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(154, 26);
+            this.numericUpDown1.TabIndex = 25;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(37, 516);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(257, 20);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Estimated Amount of Data Models:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(491, 522);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 12);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Zoltan";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1301, 737);
+            this.ClientSize = new System.Drawing.Size(1276, 737);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.lblVictor);
             this.Controls.Add(this.lblSteve);
             this.Controls.Add(this.lblOutputTimePerDeveloper);
@@ -350,6 +385,7 @@
             this.Text = "Metric Modeller Group28";
             ((System.ComponentModel.ISupportInitialize)(this.numNumberOfDevelopers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNumberOfFunctionPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,6 +418,9 @@
         private System.Windows.Forms.Label lblOutputTimePerDeveloper;
         private System.Windows.Forms.Label lblSteve;
         private System.Windows.Forms.Label lblVictor;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
