@@ -53,12 +53,12 @@
             this.lblOutputTimePerDeveloper = new System.Windows.Forms.Label();
             this.lblSteve = new System.Windows.Forms.Label();
             this.lblVictor = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numModelCount = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numNumberOfDevelopers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNumberOfFunctionPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModelCount)).BeginInit();
             this.SuspendLayout();
             // 
             // numNumberOfDevelopers
@@ -320,13 +320,13 @@
             this.lblVictor.TabIndex = 24;
             this.lblVictor.Text = "Victor";
             // 
-            // numericUpDown1
+            // numModelCount
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(310, 514);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(154, 26);
-            this.numericUpDown1.TabIndex = 25;
+            this.numModelCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModelCount.Location = new System.Drawing.Point(310, 514);
+            this.numModelCount.Name = "numModelCount";
+            this.numModelCount.Size = new System.Drawing.Size(154, 26);
+            this.numModelCount.TabIndex = 25;
             // 
             // label1
             // 
@@ -355,7 +355,7 @@
             this.ClientSize = new System.Drawing.Size(1276, 737);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numModelCount);
             this.Controls.Add(this.lblVictor);
             this.Controls.Add(this.lblSteve);
             this.Controls.Add(this.lblOutputTimePerDeveloper);
@@ -385,7 +385,7 @@
             this.Text = "Metric Modeller Group28";
             ((System.ComponentModel.ISupportInitialize)(this.numNumberOfDevelopers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNumberOfFunctionPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModelCount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,7 +418,7 @@
         private System.Windows.Forms.Label lblOutputTimePerDeveloper;
         private System.Windows.Forms.Label lblSteve;
         private System.Windows.Forms.Label lblVictor;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numModelCount;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

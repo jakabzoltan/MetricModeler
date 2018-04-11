@@ -3,35 +3,55 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MetricModelGrp28.UniqueMetrics;
 
 namespace MetricModelGrp28
 {
     public class CalculationHandler
     {
+        public decimal NumberOfDevelopers { get; set; }
+        public decimal NumberOfFunctionPoints { get; set; }
+        public LanguagePoints ProgrammingLanguage { get; set; }
 
-        public double TotalProjectTime(double functionPoints, double fpManMonth, int developerCount)
+        public ZoltanMetric ZoltanMetric { get; set; }
+        public StevenMetric StevenMetric { get; set; }
+        public VictorMetric VictorMetric { get; set; }
+        public TylerMetric TylerMetric { get; set; }
+
+        public CalculationHandler(decimal numberOfDevelopers, decimal numberOfFunctionPoints, LanguagePoints programmingLanguage, ZoltanMetric zoltanMetric, StevenMetric stevenMetric, VictorMetric victorMetric, TylerMetric tylerMetric)
         {
-            return functionPoints / fpManMonth / developerCount;
+            NumberOfDevelopers = numberOfDevelopers;
+            NumberOfFunctionPoints = numberOfFunctionPoints;
+            ProgrammingLanguage = programmingLanguage;
+            ZoltanMetric = zoltanMetric;
+            StevenMetric = stevenMetric;
+            VictorMetric = victorMetric;
+            TylerMetric = tylerMetric;
         }
 
-        public double TimePerPerson(double projectTime, double hoursPerWeek, int weeksPerMonth)
+        public decimal TotalProjectTime()
         {
-            return projectTime * hoursPerWeek * weeksPerMonth;
+            return StevenMetric.SeniorDeveloperProjecTime(VictorMetric.CalculateNewProjectTime(ZoltanMetric.CalculateWithDataModels(NumberOfFunctionPoints) / ProgrammingLanguage.FpManMonth / NumberOfDevelopers));
         }
 
-        public double TotalCost(int developerCount, double developerCost, double timePerPerson)
+        public decimal TimePerPerson(decimal projectTime)
         {
-            return developerCount * developerCost * timePerPerson;
+            return projectTime * Constants.HoursPerWeek * Constants.WeeksPerMonth;
         }
 
-        public double LinesOfCode(double functionPoints, double locFp)
+        public decimal TotalCost(decimal projectTime)
         {
-            return functionPoints * locFp;
+            return NumberOfDevelopers * Constants.DevCost * TimePerPerson(projectTime);
         }
 
-        public double TotalDevelopmentTime(double timePerPerson, int developerCount)
+        public decimal LinesOfCode()
         {
-            return developerCount * timePerPerson;
+            return ZoltanMetric.CalculateWithDataModels(NumberOfFunctionPoints) * ProgrammingLanguage.LocFp;
+        }
+
+        public decimal TotalDevelopmentTime(decimal projectTime)
+        {
+            return NumberOfDevelopers * TimePerPerson(projectTime);
         }
     }
 }

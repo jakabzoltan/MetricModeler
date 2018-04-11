@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetricModelGrp28.UniqueMetrics;
 
 namespace MetricModelGrp28
 {
@@ -19,20 +20,14 @@ namespace MetricModelGrp28
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            var calculationHandler = new CalculationHandler();
-
-
-
-
-
-
+            var calculationHandler = new CalculationHandler(
+                numNumberOfDevelopers.Value,
+                numNumberOfFunctionPoints.Value,
+                Constants.GetLanguagePoints().FirstOrDefault(x => x.Language == cboProgrammingLanguage.SelectedText),
+                new ZoltanMetric(numModelCount.Value),
+                new StevenMetric(),
+                new VictorMetric(),
+                new TylerMetric());
         }
-
-
-
-
-
-
-
     }
 }
