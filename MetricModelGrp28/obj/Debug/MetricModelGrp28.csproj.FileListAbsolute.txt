@@ -7,3 +7,13 @@
 \\mac\home\documents\visual studio 2015\Projects\MetricModelGrp28\MetricModelGrp28\obj\Debug\MetricModelGrp28.csproj.GenerateResource.Cache
 \\mac\home\documents\visual studio 2015\Projects\MetricModelGrp28\MetricModelGrp28\obj\Debug\MetricModelGrp28.exe
 \\mac\home\documents\visual studio 2015\Projects\MetricModelGrp28\MetricModelGrp28\obj\Debug\MetricModelGrp28.pdb
+C:\Users\jakabz\Documents\MetricModeler\MetricModelGrp28\bin\Debug\MetricModelGrp28.exe.config
+C:\Users\jakabz\Documents\MetricModeler\MetricModelGrp28\bin\Debug\MetricModelGrp28.exe
+C:\Users\jakabz\Documents\MetricModeler\MetricModelGrp28\bin\Debug\MetricModelGrp28.pdb
+C:\Users\jakabz\Documents\MetricModeler\MetricModelGrp28\obj\Debug\MetricModelGrp28.csprojResolveAssemblyReference.cache
+C:\Users\jakabz\Documents\MetricModeler\MetricModelGrp28\obj\Debug\MetricModelGrp28.Form1.resources
+C:\Users\jakabz\Documents\MetricModeler\MetricModelGrp28\obj\Debug\MetricModelGrp28.Properties.Resources.resources
+C:\Users\jakabz\Documents\MetricModeler\MetricModelGrp28\obj\Debug\MetricModelGrp28.csproj.GenerateResource.Cache
+C:\Users\jakabz\Documents\MetricModeler\MetricModelGrp28\obj\Debug\MetricModelGrp28.csproj.CoreCompileInputs.cache
+C:\Users\jakabz\Documents\MetricModeler\MetricModelGrp28\obj\Debug\MetricModelGrp28.exe
+C:\Users\jakabz\Documents\MetricModeler\MetricModelGrp28\obj\Debug\MetricModelGrp28.pdb
