@@ -18,7 +18,7 @@ namespace MetricModelGrp28
             InitializeComponent();
 
             cboFrameworkUsed.Items.Clear();
-            cboFrameworkUsed.Items.AddRange(Constants.GetFrameworkPoints().Select(x=>x.FrameworkName).ToArray());
+            cboFrameworkUsed.Items.AddRange(Constants.GetFrameworkPoints().Select(x => x.FrameworkName).ToArray());
             cboDeveloperSkillLevel.Items.Clear();
             cboDeveloperSkillLevel.Items.AddRange(Constants.GetDeveloperSkills().Select(x => x.Name).ToArray());
             cboProgrammingLanguage.Items.Clear();
@@ -30,11 +30,30 @@ namespace MetricModelGrp28
             var calculationHandler = new CalculationHandler(
                 numNumberOfDevelopers.Value,
                 numNumberOfFunctionPoints.Value,
-                Constants.GetLanguagePoints().FirstOrDefault(x => x.Language == cboProgrammingLanguage.SelectedText),
+                Constants.GetLanguagePoints().FirstOrDefault(x => x.Language == cboProgrammingLanguage.Text),
                 new ZoltanMetric(numModelCount.Value),
-                new StevenMetric(),
-                new VictorMetric(cboFrameworkUsed.SelectedText),
-                new TylerMetric());
+                new StevenMetric(cboDeveloperSkillLevel.Text),
+                new VictorMetric(cboFrameworkUsed.Text),
+                new TylerMetric(chkDiagrams.Checked));
+
+
+
+            if (calculationHandler.ErrorEncountered)
+            {
+                MessageBox.Show("There are some errors in your inputs. Please check over your model and resubmit!");
+                return;
+            }
+
+            var totalProjectTime = Math.Round(calculationHandler.TotalProjectTime(), 2); lblOutputTotalProjectTime.Text = totalProjectTime.ToString();
+            lblOutputTotalProjectCost.Text = calculationHandler.TotalCost(totalProjectTime).ToString("C");
+            lblOutputTotalLinesOfCode.Text = calculationHandler.LinesOfCode().ToString();
+            lblOutputCostPerDeveloper.Text = calculationHandler.StevenMetric.ModifiedDevCost().ToString("C");
+            lblOutputTimePerDeveloper.Text = calculationHandler.TimePerPerson(totalProjectTime).ToString();
+
+
+
+
+
         }
     }
 }

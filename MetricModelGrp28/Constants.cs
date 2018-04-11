@@ -7,13 +7,12 @@ namespace MetricModelGrp28
     public static class Constants
     {
         public const decimal DevCost = (decimal)37.50;
-        public const decimal SeniorDevCost = DevCost * (decimal)1.33;
         public const int HoursPerWeek = 40;
         public const int WeeksPerMonth = 4;
 
-        public static IList<LanguagePoints> GetLanguagePoints()
+        public static IList<LanguagePoint> GetLanguagePoints()
         {
-            var results = new List<LanguagePoints>();
+            var results = new List<LanguagePoint>();
             //read csv -- add to results
             using (var reader = new StreamReader("../../DataModels/Languages.csv"))
             {
@@ -23,7 +22,7 @@ namespace MetricModelGrp28
                     if (line != null)
                     {
                         var values = line.Split(',');
-                        results.Add(new LanguagePoints()
+                        results.Add(new LanguagePoint()
                         {
                             Language = values[0],
                             Level = decimal.Parse(values[1].Replace(" ", "")),
@@ -112,7 +111,7 @@ namespace MetricModelGrp28
 
     }
 
-    public class LanguagePoints
+    public class LanguagePoint
     {
         public string Language { get; set; }
         public decimal Level { get; set; }

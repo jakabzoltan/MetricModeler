@@ -1,10 +1,25 @@
-﻿namespace MetricModelGrp28.UniqueMetrics
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace MetricModelGrp28.UniqueMetrics
 {
     public class StevenMetric
     {
-        public decimal SeniorDeveloperProjecTime(decimal currentProjectTime)
+        public DeveloperSkillLevel DeveloperSkillLevel { get; set; }
+
+        public StevenMetric(string developerType)
         {
-            return currentProjectTime * (decimal) 0.6;
+            DeveloperSkillLevel = Constants.GetDeveloperSkills().FirstOrDefault(x => x.Name == developerType);
+
+        }
+        public decimal DeveloperSkillModifier(decimal currentProjectTime)
+        {
+            return currentProjectTime / DeveloperSkillLevel.CostModifier;
+        }
+
+        public decimal ModifiedDevCost()
+        {
+            return Constants.DevCost * DeveloperSkillLevel.CostModifier;
         }
     }
 }

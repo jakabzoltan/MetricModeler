@@ -56,6 +56,9 @@
             this.numModelCount = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.chkDiagrams = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numNumberOfDevelopers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNumberOfFunctionPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModelCount)).BeginInit();
@@ -180,31 +183,34 @@
             // 
             this.lblOutputTotalProjectCost.AutoSize = true;
             this.lblOutputTotalProjectCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutputTotalProjectCost.Location = new System.Drawing.Point(1134, 114);
+            this.lblOutputTotalProjectCost.Location = new System.Drawing.Point(1027, 113);
             this.lblOutputTotalProjectCost.Name = "lblOutputTotalProjectCost";
-            this.lblOutputTotalProjectCost.Size = new System.Drawing.Size(112, 31);
+            this.lblOutputTotalProjectCost.Size = new System.Drawing.Size(44, 31);
             this.lblOutputTotalProjectCost.TabIndex = 11;
-            this.lblOutputTotalProjectCost.Text = "$28,456";
+            this.lblOutputTotalProjectCost.Text = "$0";
+            this.lblOutputTotalProjectCost.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblOutputTotalProjectTime
             // 
             this.lblOutputTotalProjectTime.AutoSize = true;
             this.lblOutputTotalProjectTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutputTotalProjectTime.Location = new System.Drawing.Point(1194, 154);
+            this.lblOutputTotalProjectTime.Location = new System.Drawing.Point(1027, 153);
             this.lblOutputTotalProjectTime.Name = "lblOutputTotalProjectTime";
-            this.lblOutputTotalProjectTime.Size = new System.Drawing.Size(52, 31);
+            this.lblOutputTotalProjectTime.Size = new System.Drawing.Size(29, 31);
             this.lblOutputTotalProjectTime.TabIndex = 12;
-            this.lblOutputTotalProjectTime.Text = "4.5";
+            this.lblOutputTotalProjectTime.Text = "0";
+            this.lblOutputTotalProjectTime.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblOutputTotalLinesOfCode
             // 
             this.lblOutputTotalLinesOfCode.AutoSize = true;
             this.lblOutputTotalLinesOfCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutputTotalLinesOfCode.Location = new System.Drawing.Point(1172, 194);
+            this.lblOutputTotalLinesOfCode.Location = new System.Drawing.Point(1027, 193);
             this.lblOutputTotalLinesOfCode.Name = "lblOutputTotalLinesOfCode";
-            this.lblOutputTotalLinesOfCode.Size = new System.Drawing.Size(74, 31);
+            this.lblOutputTotalLinesOfCode.Size = new System.Drawing.Size(29, 31);
             this.lblOutputTotalLinesOfCode.TabIndex = 13;
-            this.lblOutputTotalLinesOfCode.Text = "4568";
+            this.lblOutputTotalLinesOfCode.Text = "0";
+            this.lblOutputTotalLinesOfCode.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblTitleAdvancedMetrics
             // 
@@ -274,11 +280,12 @@
             // 
             this.lblOutputCostPerDeveloper.AutoSize = true;
             this.lblOutputCostPerDeveloper.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutputCostPerDeveloper.Location = new System.Drawing.Point(1156, 423);
+            this.lblOutputCostPerDeveloper.Location = new System.Drawing.Point(1028, 422);
             this.lblOutputCostPerDeveloper.Name = "lblOutputCostPerDeveloper";
-            this.lblOutputCostPerDeveloper.Size = new System.Drawing.Size(78, 25);
+            this.lblOutputCostPerDeveloper.Size = new System.Drawing.Size(36, 25);
             this.lblOutputCostPerDeveloper.TabIndex = 20;
-            this.lblOutputCostPerDeveloper.Text = "$4,500";
+            this.lblOutputCostPerDeveloper.Text = "$0";
+            this.lblOutputCostPerDeveloper.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblTimePerDeveloper
             // 
@@ -294,11 +301,12 @@
             // 
             this.lblOutputTimePerDeveloper.AutoSize = true;
             this.lblOutputTimePerDeveloper.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutputTimePerDeveloper.Location = new System.Drawing.Point(1198, 466);
+            this.lblOutputTimePerDeveloper.Location = new System.Drawing.Point(1032, 464);
             this.lblOutputTimePerDeveloper.Name = "lblOutputTimePerDeveloper";
-            this.lblOutputTimePerDeveloper.Size = new System.Drawing.Size(36, 25);
+            this.lblOutputTimePerDeveloper.Size = new System.Drawing.Size(24, 25);
             this.lblOutputTimePerDeveloper.TabIndex = 22;
-            this.lblOutputTimePerDeveloper.Text = "68";
+            this.lblOutputTimePerDeveloper.Text = "0";
+            this.lblOutputTimePerDeveloper.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblSteve
             // 
@@ -348,11 +356,43 @@
             this.label2.TabIndex = 27;
             this.label2.Text = "Zoltan";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(93, 561);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(201, 20);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Design Diagrams Created?";
+            // 
+            // chkDiagrams
+            // 
+            this.chkDiagrams.AutoSize = true;
+            this.chkDiagrams.Location = new System.Drawing.Point(310, 566);
+            this.chkDiagrams.Name = "chkDiagrams";
+            this.chkDiagrams.Size = new System.Drawing.Size(15, 14);
+            this.chkDiagrams.TabIndex = 29;
+            this.chkDiagrams.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(491, 566);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(25, 12);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Tyler";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1276, 737);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.chkDiagrams);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numModelCount);
@@ -421,6 +461,9 @@
         private System.Windows.Forms.NumericUpDown numModelCount;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox chkDiagrams;
+        private System.Windows.Forms.Label label4;
     }
 }
 
