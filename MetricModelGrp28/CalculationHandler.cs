@@ -33,7 +33,7 @@ namespace MetricModelGrp28
                 MessageBox.Show("Must input a value for Number of Function Points");
                 ErrorEncountered = true;
             }
-            if (ProgrammingLanguage.Language == null)
+            if (programmingLanguage.Language == null)
             {
                 MessageBox.Show("Must select a programming language");
                 ErrorEncountered = true;
