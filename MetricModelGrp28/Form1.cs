@@ -35,7 +35,7 @@ namespace MetricModelGrp28
                 new StevenMetric(cboDeveloperSkillLevel.Text),
                 new VictorMetric(cboFrameworkUsed.Text),
                 new TylerMetric(chkDiagrams.Checked));
-
+            
 
 
             if (calculationHandler.ErrorEncountered)
@@ -46,7 +46,7 @@ namespace MetricModelGrp28
 
             var totalProjectTime = Math.Round(calculationHandler.TotalProjectTime(), 2); lblOutputTotalProjectTime.Text = totalProjectTime.ToString();
             lblOutputTotalProjectCost.Text = calculationHandler.TotalCost(totalProjectTime).ToString("C");
-            lblOutputTotalLinesOfCode.Text = calculationHandler.LinesOfCode().ToString();
+            lblOutputTotalLinesOfCode.Text = Math.Round(calculationHandler.LinesOfCode()).ToString();
             lblOutputCostPerDeveloper.Text = calculationHandler.StevenMetric.ModifiedDevCost().ToString("C");
             lblOutputTimePerDeveloper.Text = calculationHandler.TimePerPerson(totalProjectTime).ToString();
 

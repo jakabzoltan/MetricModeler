@@ -6,11 +6,12 @@
 
         public ZoltanMetric(decimal amountOfModels)
         {
-            AmountOfModels = amountOfModels;
+            AmountOfModels = amountOfModels;   
         }
         public decimal CalculateWithDataModels(decimal functionPoints)
         {
-            return functionPoints * (decimal) 0.2 * AmountOfModels;
+            
+            return functionPoints * (1 + ((decimal) 0.2 * AmountOfModels));
         }
     }
 }
